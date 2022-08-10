@@ -9,11 +9,11 @@
 #include "vstdlib/random.h"
 #include "engine/IEngineTrace.h"
 
-class CServerPlugin : public IServerPluginCallbacks
+class CBufferFix : public IServerPluginCallbacks
 {
 public:
-	CServerPlugin();
-	~CServerPlugin();
+	CBufferFix();
+	~CBufferFix();
 
 	// IServerPluginCallbacks methods
 	virtual bool			Load(CreateInterfaceFn interfaceFactory, CreateInterfaceFn gameServerFactory);
